@@ -45,7 +45,7 @@ document.getElementById("formLogin").addEventListener("submit", function (e) {
     timer: 1500,
     showConfirmButton: false
   }).then(() => {
-    window.location.href = "http://localhost/portaf/portafolio/index.html";
+    window.location.href = "https://christophermartin17.github.io/Portafolio/";
   });
 });
 
@@ -95,7 +95,7 @@ document.getElementById("registerLink").addEventListener("click", function (e) {
         timer: 1500,
         showConfirmButton: false
       }).then(() => {
-        window.location.href = "http://localhost/portaf/portafolio/index.html";
+        window.location.href = "https://christophermartin17.github.io/Portafolio/";
       });
     }
   });
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (currentUser) {
     console.log("Usuario autenticado:", JSON.parse(currentUser).email);
     // Opcional: redirigir directamente si ya está autenticado
-    // window.location.href = "http://localhost/portaf/portafolio/index.html";
+    // window.location.href = "https://christophermartin17.github.io/Portafolio/";
   } else {
     console.log("No hay sesión activa.");
   }
@@ -141,10 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // Deshabilitar los botones de redes sociales (ya que no tenemos autenticación real)
 document.getElementById('googleLogin').addEventListener('click', (e) => {
   e.preventDefault();
-  Swal.fire({ icon: 'info', title: 'Función no disponible', text: 'El login con Google no está implementado en esta versión local.' });
+  Swal.fire({ icon: 'info', title: 'Función no disponible', text: 'El login con Google no está implementado.' });
 });
 
 document.getElementById('facebookLogin').addEventListener('click', (e) => {
   e.preventDefault();
-  Swal.fire({ icon: 'info', title: 'Función no disponible', text: 'El login con Facebook no está implementado en esta versión local.' });
+  Swal.fire({ icon: 'info', title: 'Función no disponible', text: 'El login con Facebook no está implementado.' });
 });
